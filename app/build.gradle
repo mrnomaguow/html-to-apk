@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.livewire.converter'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.livewire.converter'
+        minSdk 24
+        targetSdk 36
+        versionCode 7
+        versionName '1.3.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // Signing for the APKs this app builds (Apache 2.0, Google).
+    implementation 'com.android.tools.build:apksig:8.7.3'
+}
+
+// The template APK is built from source by the :template module and
+// copied into this app's assets before the assets are merged, so the
+// repo never ships a prebuilt template binary.
+tasks.register('copyTemplateApk', Copy) {
+    dependsOn ':template:assembleRelease'
+    from rootProject.file('template/build/outputs/apk/release')
+    include 'template-release-unsigned.apk'
+    into file('src/main/assets')
+    rename { 'template.apk' }
+}
+
+tasks.named('preBuild') {
+    dependsOn 'copyTemplateApk'
+}

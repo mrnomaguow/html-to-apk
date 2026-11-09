@@ -1,0 +1,4 @@
+- Open-source release: Apache 2.0, Gradle build, template built from source.
+- Signing keys are now generated on your phone instead of shared, so apps
+  built with older versions cannot be updated in place — uninstall the old
+  copy first if the install fails.

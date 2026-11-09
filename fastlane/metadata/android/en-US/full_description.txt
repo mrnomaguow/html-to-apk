@@ -1,0 +1,16 @@
+HTML to APK turns a single HTML file into an installable Android app,
+entirely on your phone. Pick an HTML file, name the app, optionally pick an
+icon, tap Build APK, then save and install it.
+
+The apps it builds are packaged properly and signed v1+v2+v3, so they install
+on Android 16, and they respect the status bar and navigation bar — no content
+hidden under the clock or the menu bar.
+
+Features:
+- Converts a single self-contained HTML file into an APK
+- Custom app icon picker (any image, scaled to every launcher density)
+- App name and package name auto-fill from the file name
+- Donations page
+
+Each phone generates its own signing key the first time you build an app.
+The key stays on the device and is never uploaded anywhere.

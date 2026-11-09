@@ -1,0 +1,31 @@
+# F-Droid build recipe for HTML to APK.
+# Copy this file to fdroiddata as metadata/com.livewire.converter.yml
+# and repo: https://github.com/mrnomaguow/html-to-apk
+Categories:
+  - System
+License: Apache-2.0
+AuthorName: Elijah Wougamon
+SourceCode: https://github.com/mrnomaguow/html-to-apk
+IssueTracker: https://github.com/mrnomaguow/html-to-apk/issues
+AutoName: HTML to APK
+Summary: Turn a single HTML file into an installable Android app
+Description: |-
+  HTML to APK turns a single HTML file into an installable Android app,
+  entirely on your phone. Pick an HTML file, name the app, optionally pick
+  an icon, tap Build APK, then save and install it. The apps it builds are
+  packaged properly and signed v1+v2+v3, so they install on Android 16.
+RepoType: git
+Repo: https://github.com/mrnomaguow/html-to-apk
+
+Builds:
+  - versionName: 1.3.0
+    versionCode: 7
+    commit: v1.3.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 1.3.0
+CurrentVersionCode: 7
