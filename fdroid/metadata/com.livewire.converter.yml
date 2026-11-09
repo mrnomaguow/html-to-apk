@@ -4,13 +4,14 @@ License: Apache-2.0
 AuthorName: Elijah Wougamon
 SourceCode: https://github.com/mrnomaguow/html-to-apk
 IssueTracker: https://github.com/mrnomaguow/html-to-apk/issues
+
 AutoName: HTML to APK
-Summary: Turn a single HTML file into an installable Android app
 Description: |-
   HTML to APK turns a single HTML file into an installable Android app,
   entirely on your phone. Pick an HTML file, name the app, optionally pick
   an icon, tap Build APK, then save and install it. The apps it builds are
   packaged properly and signed v1+v2+v3, so they install on Android 16.
+
 RepoType: git
 Repo: https://github.com/mrnomaguow/html-to-apk
 
