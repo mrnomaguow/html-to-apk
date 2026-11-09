@@ -1,1 +1,1 @@
-Turn a single HTML file into an installable Android app, on your phone.
+Turn a single HTML file into an installable app, on your phone.
